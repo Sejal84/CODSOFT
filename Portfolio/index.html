@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejal Kumari</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b33122082b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo"> 
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="front">
+        <div class="header-text">
+          <p>Hey there, intrepid internet traveler! 👋 Welcome to the cosmic corner of creativity curated by yours truly - <span> Sejal Kumari</span> . I'm not your average Web Developer; think of me as a mixologist of Developer, blending equal parts passion, innovation, and just the right amount of caffeine.</p>
+        </div>
+        <div class="image">
+          <img class="display-pic"src="images/background.jpeg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------About--------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/id.jpeg" alt="image">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>Hello there! I'm Sejal Kumari, a passionate and versatile individual ready to make a positive impact.With a comprehensive background in Development, I have consistently demonstrated a commitment to excellence and a proactive approach to tackling challenges. My work is characterized by precision, strategic thinking, and a meticulous attention to detail. Feel free to explore my portfolio and get in touch.</p>
 
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Front-End Development:</span><br>Knowledge of HTML,CSS,JavaScript</li>
+              <li><span>Intermediate Knowledge:</span><br> Python</li>
+              <li><span>Coding languages</span><br> C, C++, R, Java</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>School</span><br>St. Anthony's School,Kurseong</li>
+              <li><span>BE</span><br> DSATM,Bengaluru</li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <!-- -----------projects---------- -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="subtitle">Projects</h1>
+      <div class="project-lists">
+        <div class="work">
+          <img src="images/RockPaperScissor.png" alt="RockPaperScissor" class="work-image">
+          <div class="project-description">
+            <h3>Rock Paper Scissors Game</h3>
+            <p>This is simple Rock-Paper-Scissors game implemented using HTML,CSS and JavaScript. The game is responsive and visually appealing layout with appropriately sized and spaced buttons. The result—whether it's a win, lose, or draw—is dynamically displayed on the webpage, creating an interactive and enjoyable experience for users engaging in this timeless game online </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/TicTacToe.png" alt="TicTacToe" class="work-image">
+          <div class="project-description">
+            <h3>Tic Tac Toe Game</h3>
+            <p>The Tic Tac Toe game implemented in Python is a classic two-player board game where opponents take turns marking 'X' or 'O' on a 3x3 grid. This simple and familiar design allows users to enjoy the timeless game of Tic Tac Toe in a digital format, providing a straightforward and engaging interactive experience.
+            </p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/SnakeGame.png" alt="SnakeGame" class="work-image">
+          <div class="project-description">
+            <h3>Snake Game</h3>
+            <p>The Snake Game implemented in Python is a classic and engaging console-based application. In this game, players control a snake that moves around a bordered screen. The Snake Game showcases fundamental programming concepts, including user input, logic for movement and collision detection, and dynamic rendering in a console environment.It offers a simple yet entertaining experience. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ----------contact--------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="subtitle">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>sejalbhadani12@gmail.com</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sejal-kumari-a35773264/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          <a href="https://github.com/Sejal84"><i class="fa-brands fa-github fa-xl"></i></a>
+          <a href="https://www.instagram.com/_.sejal_12/"><i class="fa-brands fa-instagram fa-xl"></i></a>  
+        </div>
+        <a href="CV/Sejal Kumari CV.pdf" download class="btn">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required >
+          <input type="email" name="email" placeholder="Your Email" required >
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright &#169; 2023 Sejal Kumari</p>
+  </div>
+</div>
+
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");  
+      document.getElementById(tabname).classList.add("active-tab");  
+    }
+
+
+  </script>
+</body>
+</html>
